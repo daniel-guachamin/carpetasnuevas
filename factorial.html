@@ -1,0 +1,38 @@
+<!-- Crea una página Web que pida al usuario
+     un número entero y que devuelva de salida el factorial de dicho número
+ -->
+<!DOCTYPE html>
+<html>
+
+<head charset="UTF-8">
+    <script language="javascript" type="text/javascript">
+        var numero = prompt("Escribe un numero");
+        var entero = parseInt(numero);
+        function facto(lol) {
+            var resultado = 1;
+            for (let i = 1; i <= lol; i++) {
+                resultado = resultado * i;
+
+            }
+            return resultado;
+        }
+        var res = facto(entero);
+        document.write("El factorial de " + entero + " es: " + res + "<br>")
+
+
+
+        // let numero2 = prompt("Escribe un numero");
+        // var nuevo_number = parseInt(numero2);
+        // var factorial = 1;
+        // for (var i = 1; i <= nuevo_number; i++) {
+        //     factorial = factorial * i;
+        // }
+        // document.write("El factorial de " + nuevo_number + " es: " + factorial); 
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
